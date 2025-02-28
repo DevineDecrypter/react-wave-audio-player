@@ -1,6 +1,6 @@
 {
   "name": "react-wave-audio-player",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A customizable React audio player component with TypeScript and Tailwind CSS.",
   "main": "dist/index.js",
   "module": "dist/index.js",
