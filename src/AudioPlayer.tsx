@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, FC, ReactNode, ChangeEvent } from "react";
 import WaveSurfer from "wavesurfer.js";
 import { FaPlay, FaPause, FaDownload } from "react-icons/fa";
 import { BsFillVolumeMuteFill, BsFillVolumeUpFill } from "react-icons/bs";
@@ -14,17 +14,17 @@ type AudioPlayerProps = {
   barGap?: number;
   height?: number;
   className?: string;
-  playIcon?: React.ReactNode;
-  pauseIcon?: React.ReactNode;
-  volumeUpIcon?: React.ReactNode;
-  volumeMuteIcon?: React.ReactNode;
+  playIcon?: ReactNode;
+  pauseIcon?: ReactNode;
+  volumeUpIcon?: ReactNode;
+  volumeMuteIcon?: ReactNode;
   playbackSpeeds?: number[];
   onPlay?: () => void;
   onPause?: () => void;
   onVolumeChange?: (volume: number) => void;
 };
 
-const AudioPlayer: React.FC<AudioPlayerProps> = ({
+const AudioPlayer: FC<AudioPlayerProps> = ({
   src,
   waveColor = "#a3aed0",
   progressColor = "#3311db",
@@ -112,7 +112,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
     }
   };
 
-  const handleVolume = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleVolume = (e: ChangeEvent<HTMLInputElement>) => {
     const newVolume = parseFloat(e.target.value);
     if (wavesurfer.current) {
       if (muted) {
