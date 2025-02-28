@@ -45,7 +45,7 @@ If you haven't set up Tailwind CSS, follow the official documentation:
 
 ```tsx
 import React from "react";
-import AudioPlayer from "react-wave-audio-player";
+import { AudioPlayer } from "react-wave-audio-player";
 
 const App = () => {
   return (
