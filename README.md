@@ -1,4 +1,4 @@
-![React Wave Audio Player Preview](https://raw.githubusercontent.com/theabhipatel/react-wave-audio-player/react-wave-audio-player.png)
+![React Wave Audio Player Preview](https://github.com/theabhipatel/react-wave-audio-player/blob/master/react-wave-audio-player.png)
 
 # React Wave Audio Player
 
@@ -11,7 +11,7 @@ A **customizable React audio player** built with **TypeScript, Tailwind CSS, and
 - 🎚️ **Adjustable Volume & Playback Speed**
 - ⏯ **Play/Pause, Mute/Unmute Controls**
 - 📥 **Audio Download Button**
-- 🌙 **Works with Tailwind CSS** for styling
+- ✨ **Works with Tailwind CSS** for styling
 
 ---
 
